@@ -1,0 +1,170 @@
+.courses {
+    background: #FFFDF4;
+    color: #374639;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 100px 0;
+}
+
+.courses-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.courses__content {
+    max-width: 520px;
+}
+
+.courses__content-name {
+    font-size: 45px;
+    line-height: 53px;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+}
+
+.courses__content-title {
+    font-size: 19px;
+    line-height: 27px;
+}
+
+.courses__box {
+    width: 360px;
+    padding: 40px 0;
+}
+
+.courses__box-img img {
+    max-width: 400px;
+    height: 267px;
+    border-radius: 5px;
+}
+
+.courses__box-name {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.courses__box-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-price_stock {
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+}
+
+.courses__box-time {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #ECEDEC;
+    padding: 5px 0;
+}
+
+.courses__box-time p:first-child {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #72776C;
+}
+
+.courses__box-time p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E5C58;
+}
+
+/* css phần brand */
+.brand {
+    background-color: #ffffff;
+    margin: 100px 0;
+}
+
+.brand__content {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+
+.brand__content-text {
+    text-align: center;
+    max-width: 500px;
+}
+
+.brand__content-img img {
+    border-radius: 10px;
+}
+
+.content-text_title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 55px;
+}
+
+.content-text_name {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #0D0D0D;
+    margin: 15px 0;
+}
+
+.content-text_auth {
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    margin: 5px 0;
+}
+
+.content-text_des {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1550px) {
+    .courses__box-img img {
+        width: 320px;
+        height: 230px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .courses__content{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .courses-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        width: 800px;
+    }
+    .brand__content-img img{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .container{
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    .courses-wrapper,.brand__content{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .courses-wrapper,.brand__content{
+        padding: 20px;
+    }
+  }
